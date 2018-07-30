@@ -1,0 +1,26 @@
+.student-card {
+  width: 400px;
+  height: 200px;
+  background: pink;
+  margin: 0px auto;
+  padding: 21px;
+  margin-top: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 1px 4px 0 rgba(0, 0, 0, 0.3);
+  .name-section {
+    display: flex;
+    justify-content: space-between;
+  }
+  .roll-no {
+    display: flex;
+    margin-top: 17px;
+  }
+  .mark-section {
+    margin-top: 20px;
+    .mark-list {
+      list-style: none;
+      margin-left: 22px;
+    }
+  }
+}

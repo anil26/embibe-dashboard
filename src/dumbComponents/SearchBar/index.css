@@ -1,0 +1,19 @@
+.search-bar {
+  height: 70px;
+  background: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .search-bar .search-box {
+    height: 30px;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: none; }
+  .search-bar button {
+    height: 25px;
+    margin-left: 5px;
+    border-radius: 5px;
+    background: #fff;
+    padding: 2px 5px;
+    cursor: pointer; }
