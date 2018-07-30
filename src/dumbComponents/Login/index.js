@@ -35,7 +35,6 @@ class Login extends React.Component {
 		history.push("/dashboard")
 	}
 	render() {
-		console.log("props in Login", this.props)
 		const { error } = this.state
 		return (
 			<div className="login-container">

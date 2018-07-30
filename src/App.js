@@ -12,7 +12,6 @@ class App extends Component {
     //React-helmet
   }
   render() {
-    console.log("props in App", this.props)
     return (
       <div className="App">
         <header className="App-header">

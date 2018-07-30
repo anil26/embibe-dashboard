@@ -27,7 +27,6 @@ const enhancer = applyMiddleware(...middlewares)
 const store = createStore(app, {}, composeEnhancers(enhancer));
 
 
-console.log(store.getState())
 ReactDOM.render(
 	<Provider store={store}>
 		<Router history={createBrowserHistory()}>

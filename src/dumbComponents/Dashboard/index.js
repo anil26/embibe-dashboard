@@ -37,9 +37,7 @@ class Dashboard extends React.Component {
     return null
   }
   sort = (filteredData, order, field) => {
-    debugger
     const sortedArr = Object.keys(filteredData).sort((a, b) => {
-      console.log("filtereddata" ,filteredData[a][field], filteredData[b][field])
       if(order === "DESC") {
         if(filteredData[a][field] > filteredData[b][field]) return -1
         if(filteredData[a][field] < filteredData[b][field]) return 1
@@ -49,18 +47,15 @@ class Dashboard extends React.Component {
       if(filteredData[a][field] < filteredData[b][field]) return -1
       return 0
       })
-    console.log("sortedArr", sortedArr)
      return sortedArr
   }
   createStudentsCard = () => {
-    //const { studentData } = this.props
     const { filteredData } = this.state
     if(!filteredData) {
       return null
     }
     const { orderName, orderMarks, activeSort } = this.state
     let sortedArr = Object.keys(filteredData)
-    debugger
     if(activeSort === "name") {
       sortedArr = this.sort(filteredData, orderName, "name")
     } else if (activeSort === "marks") {

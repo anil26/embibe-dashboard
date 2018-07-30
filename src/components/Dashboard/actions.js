@@ -21,10 +21,8 @@ const getStudentData = (payload) => {
     dispatch(studentDataRequest())
     
     fetch(" https://api.myjson.com/bins/1dlper").then((result) => {
-      console.log(result)
       return result.json()
     }).then((result1) => {
-      console.log(result1)
       dispatch(studentDataSuccess(result1))
     }).catch((err) => {
       dispatch(studentDataFailure(err))
